@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dadad9"
+    tools:context=".MainActivity">
+
+    <!-- Action Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Text Above Buttons -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="200dp"
+        android:paddingBottom="200dp"
+        android:text="Evaluation of Attentional Performances"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Button 1: Quick Calculation Test -->
+        <Button
+            android:id="@+id/btnQuickCalculationTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Quick Calculation Test"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#ffd862"
+            app:rippleColor="#dadad9" />
+
+        <!-- Button 2: Low to High Test -->
+        <Button
+            android:id="@+id/btnLowToHighTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Low to High Test"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:backgroundTint="#98d0c1"
+            app:rippleColor="#dadad9" />
+
+        <!-- Button 3: Triangle Math Test -->
+        <Button
+            android:id="@+id/btnTriangleMathTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Triangle Math Test"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#e74133"
+            app:rippleColor="#dadad9" />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

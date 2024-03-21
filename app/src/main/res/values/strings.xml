@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyFyp2</string>
+    <string name="Login">Login</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="phone">Phone No</string>
+    <string name="Register">Register</string>
+    <string name="password_visibility_toggle" />
+</resources>

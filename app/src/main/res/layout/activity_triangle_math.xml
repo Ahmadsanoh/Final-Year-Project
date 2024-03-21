@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dadad9">
+
+    <!-- Text above the box table -->
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\n\nPress the correct answer when shown."
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Boxes (now Buttons) for the upside-down triangle -->
+    <Button
+        android:id="@+id/box1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:text=""
+        android:textSize="30sp"
+        android:background="#e74133"
+        app:backgroundTint="#e74133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/instructions"
+        app:layout_constraintEnd_toStartOf="@id/box2" />
+
+    <!-- Button 2 -->
+    <Button
+        android:id="@+id/box2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:text=""
+        android:textSize="30sp"
+        android:background="#e74133"
+        app:backgroundTint="#e74133"
+        app:layout_constraintTop_toBottomOf="@id/instructions"
+        app:layout_constraintStart_toEndOf="@id/box1"
+        app:layout_constraintEnd_toStartOf="@id/box3" />
+
+    <!-- Button 3 -->
+    <Button
+        android:id="@+id/box3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:text=""
+        android:textSize="30sp"
+        android:background="#e74133"
+        app:backgroundTint="#e74133"
+        app:layout_constraintTop_toBottomOf="@id/instructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/box2" />
+
+    <!-- Button 4 -->
+    <Button
+        android:id="@+id/box4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#e74133"
+        app:backgroundTint="#e74133"
+        app:layout_constraintTop_toBottomOf="@id/plus1"
+        app:layout_constraintStart_toEndOf="@id/box1"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintEnd_toStartOf="@id/box5" />
+
+    <!-- Button 5 -->
+    <Button
+        android:id="@+id/box5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="100dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#e74133"
+        app:backgroundTint="#e74133"
+        app:layout_constraintTop_toBottomOf="@id/plus2"
+        app:layout_constraintStart_toEndOf="@id/box2"
+        app:layout_constraintEnd_toStartOf="@id/box6" />
+
+    <!-- Button 6 -->
+    <Button
+        android:id="@+id/box6"
+        android:layout_width="82.8dp"
+        android:layout_height="82.8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:textSize="30sp"
+        android:background="#e74133"
+        app:backgroundTint="#e74133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/box5"
+        app:layout_constraintTop_toBottomOf="@id/plus3" />
+
+    <!-- Plus signs -->
+    <TextView
+        android:id="@+id/plus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/box1"
+        app:layout_constraintStart_toEndOf="@id/box1"
+        app:layout_constraintEnd_toStartOf="@id/box2" />
+
+    <TextView
+        android:id="@+id/plus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/box2"
+        app:layout_constraintStart_toEndOf="@id/box2"
+        app:layout_constraintEnd_toStartOf="@id/box3" />
+
+    <TextView
+        android:id="@+id/plus3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/box4"
+        app:layout_constraintStart_toEndOf="@id/box4"
+        app:layout_constraintEnd_toStartOf="@id/box5" />
+
+    <!-- TextView for result display -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/box6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
